@@ -5,7 +5,7 @@ rod.
 
 ## Usage
 
-You can clone this repository or just navigate to `main.py` and copy the code. 
+You can clone this repository or just navigate to `main.py` and copy the code.
 
 ## Example
 
@@ -19,13 +19,17 @@ def solve_tower(x, from_rod, to_rod, aux_rod):
         solve_tower(x - 1, aux_rod, to_rod, from_rod)
 
 
-if __name__ == '__main__':
+def main():
     solve_tower(4, 'A', 'C', 'B')
+
+
+if __name__ == '__main__':
+    main()
 ```
 
 Here the expected output.
 
-```shell
+```text
 Move the disk 1 from A to B
 Move the disk 2 from A to C
 Move the disk 1 from B to C
